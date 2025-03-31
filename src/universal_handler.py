@@ -5,6 +5,7 @@ from invoice_manager import InvoiceManager
 from transaction_manager import TransactionManager
 from settings_manager import SettingsManager
 from storage_handler import StorageHandler
+from wallet_api import WalletAPI
 
 class UniversalHandler:
     def __init__(self):
