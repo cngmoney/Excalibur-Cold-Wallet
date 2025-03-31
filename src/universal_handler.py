@@ -58,9 +58,3 @@ class UniversalHandler:
 
     def receive_transaction(self, wallet, from_address, amount, currency, description=""):
         return self.tx.receive_funds(wallet, from_address, amount, currency, description)
-
-# Example usage:
-if __name__ == "__main__":
-    uh = UniversalHandler()
-    wallet = {"address": "0xME", "BTC": 1.0, "ETH": 0.0}
-    print(uh.swap_crypto(wallet, "BTC", "ETH", 0.5))
