@@ -8,6 +8,7 @@ from storage_handler import StorageHandler
 
 class UniversalHandler:
     def __init__(self):
+        self.wallet = WalletAPI()
         self.exchange = ExchangeManager()
         self.fiat = FiatConversion()
         self.ledger = LedgerSystem()
